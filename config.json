@@ -1,6 +1,5 @@
-// Pinscape Pico Configuration
+// Pinscape Pico Lite configuration - Copyright 2025 Marten Schukkink / BSD-3-Clause license / NO WARRANTY
 // Based on Starter Template - Copyright 2024, 2025 Michael J Roberts / BSD-3-Clause license / NO WARRANTY
-
 {
     // ---------------------------------------------------------------------
     //
@@ -70,121 +69,116 @@
     // invoke.
 
     buttons: [
-    
-	// LEFT SIDE PINS
 	// Left flipper button
         { 
             source: { type: "gpio", gp: 0 },
-            action: { type: "key", key: "left shift" },  
+            action: { type: "key", key: "left shift" },
         },
         // Right flipper button
         { 
             source: { type: "gpio", gp: 1 },
-            action: { type: "key", key: "right shift" }, 
+            action: { type: "key", key: "right shift" },
         },
         // Left 2nd flipper switch (for double-leaf switches)
         { 
             source: { type: "gpio", gp: 2 },
-            action: { type: "key", key: "left windows" }, 
+            action: { type: "key", key: "left windows" },
         },
         // Right 2nd flipper switch (for double-leaf switches)
         { 
             source: { type: "gpio", gp: 3 },
-            action: { type: "key", key: "right alt" }, 
+            action: { type: "key", key: "right alt" },
         },
         // Left MagnaSave button
         { 
             source: { type: "gpio", gp: 4 },
-            action: { type: "key", key: "left ctrl" }, 
+            action: { type: "key", key: "left ctrl" },
         },
         // Right MagnaSave button
         { 
             source: { type: "gpio", gp: 5 },
-            action: { type: "key", key: "right ctrl" }, 
+            action: { type: "key", key: "right ctrl" },
         },
         // Start button
         { 
             source: { type: "gpio", gp: 6 },
-            action: { type: "key", key: "1" },     
+            action: { type: "key", key: "1" },
         },
         // Exit button
         { 
             source: { type: "gpio", gp: 7 },
-            action: { type: "key", key: "esc" },   
+            action: { type: "key", key: "esc" },
         },
         // Launch Ball
         { 
             source: { type: "gpio", gp: 8 },
-            action: { type: "key", key: "enter" }, 
+            action: { type: "key", key: "enter" },
         },
         // Extra Ball/Buy-In Button
         { 
             source: { type: "gpio", gp: 9 },
-            action: { type: "key", key: "2" }, 
+            action: { type: "key", key: "2" },
         },
-        // "7" = operator control panel cancel/exit
+        // Operator control panel cancel/exit
         { 
             source: { type: "gpio", gp: 10 },
-            action: { type: "key", key: "7" },     
+            action: { type: "key", key: "7" },
         },
-        // "8" = operator control panel previous/down
+        // Operator control panel previous/down
         { 
             source: { type: "gpio", gp: 11 },
-            action: { type: "key", key: "8" },     
+            action: { type: "key", key: "8" },
         },
-        // "9" = operator control panel next/up
+        // Operator control panel next/up
         { 
             source: { type: "gpio", gp: 12 },
-            action: { type: "key", key: "9" },     
+            action: { type: "key", key: "9" },
         },
-        // "0" = operator control panel enter/select
+        // Operator control panel enter/select
         { 
             source: { type: "gpio", gp: 13 },
-            action: { type: "key", key: "0" },     
+            action: { type: "key", key: "0" },
         },
         // VP Volume Down
         { 
             source: { type: "gpio", gp: 14 },
-            action: { type: "key", key: "-" },     
+            action: { type: "key", key: "-" },
         },
         // VP Volume Up
         {
             source: { type: "gpio", gp: 15 },
-            action: { type: "key", key: "+" },     
-        },
-        
-        // RIGHT SIDE PINS
-        // Spare 2
-        { 
-            source: { type: "gpio", gp: 16 },
-            // not configured
-        }
-        // Spare 1
-        { 
-            source: { type: "gpio", gp: 17 },
-            // not configured
-        }
-
-        // Right coin chute switch
-        { 
-            source: { type: "gpio", gp: 18 },
-            action: { type: "key", key: "5" },     
-        },
-        // Middle coin chute switch
-        { 
-            source: { type: "gpio", gp: 19 },
-            action: { type: "key", key: "4" },     
-        },
-        // Left coin chute switch
-        { 
-            source: { type: "gpio", gp: 20 },
-            action: { type: "key", key: "3" },     
+            action: { type: "key", key: "+" },
         },
         // Coin door open/closed switch
         { 
             source: { type: "gpio", gp: 21 },
             action: { type: "key", key: "end" },
+        },
+        // Left coin chute switch
+        { 
+            source: { type: "gpio", gp: 20 },
+            action: { type: "key", key: "3" },
         },	
+        // Middle coin chute switch
+        { 
+            source: { type: "gpio", gp: 19 },
+            action: { type: "key", key: "4" },
+        },
+        // Right coin chute switch
+        { 
+            source: { type: "gpio", gp: 18 },
+            action: { type: "key", key: "5" },
+        },
+        // Spare 1 - NOT CONFIGURED
+        //{ 
+        //    source: { type: "gpio", gp: 17 },
+        //    action: { type: "key", key: "" },
+        //},
+        // Spare 2 - NOT CONFIGURED
+        //{ 
+        //    source: { type: "gpio", gp: 16 },
+        //    action: { type: "key", key: "" },
+        //},
     ],
 
 
@@ -218,10 +212,11 @@
 
     // ADS1115 ADC
      ads1115: {
-         i2c: 1,              // I2C bus number, 0 for I2C0, 1 for I2C1
-         addr: 0x48,          // I2C address, set on the chip via pin inputs, 0x48 to 0x4B
-         ready: 22,           // GPIO connected to the chip's READY pin, or -1 if not connected
-         channel: 0,          // ADC channel number (0 to 3) on the chip where the pot is connected
+         i2c: 1,                 // I2C bus number, 0 for I2C0, 1 for I2C1
+         addr: 0x48,             // I2C address, set on the chip via pin inputs, 0x48 to 0x4B
+         ready: 22,              // GPIO connected to the chip's READY pin, or -1 if not connected
+         channel: "AIN0/AIN3",   // plunger input = differential signal AIN0-AIN3
+         voltageRange: 2.048,    // voltage range +/- 2.048V from the +1.65V AIN3 reference
     },
 
     // -------------------------------------------------------------------
@@ -236,5 +231,3 @@
       pullup: true,    // enable the Pico's internal pull-up resistors on SDA and SCL
     },
 }
-
-
