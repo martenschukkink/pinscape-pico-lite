@@ -1,12 +1,14 @@
 # How-to: "Lite" Virtual Pinball setup with a Pinscape Pico
 
-> Note that this is a work in progress. At this time, the first PCB's have been ordered based on a breadboard prototype. The board should work, but this project comes with NO WARRANTIES.
+> Note that this is a work in progress. At this time, the first PCB's have been ordered based on a working breadboard prototype. The board should work, but this project comes with NO WARRANTIES.
 
 This page documents how to build a basic board that can be used in a Virtual Pinball cabinet that supports buttons, nudging and a plunger.
 
 The board is based on the great work of Michael J Roberts aka MJR, who developed the [Pinscape Pico](https://github.com/mjrgh/PinscapePico/) I/O controller for pinball cabinets.
 
 This project supports connecting almost all necessary pinball related buttons. It also supports nudging through the Adafruit MMA8451 breakout board and uses the Adafruit ADS1115 breakout board to connect an analog plunger with a potentiometer.
+
+![Complete layout](layout-complete.png)
 
 This project is meant as a Virtual Pinball setup without outputs, hence the "Lite". If you need outputs, this project might not be for you. 
 
@@ -19,11 +21,11 @@ This project is meant as a Virtual Pinball setup without outputs, hence the "Lit
 - Adafruit MMA8451 Triple-Axis Accelerometer ([Adafruit #2019](https://www.adafruit.com/product/2019), [DigiKey](https://www.digikey.nl/nl/products/detail/adafruit-industries-llc/2019/4990790))
 - Adafruit ADS1115 16-Bit ADC ([Adafruit #1085](https://www.adafruit.com/product/1085), [DigiKey](https://www.digikey.nl/nl/products/detail/adafruit-industries-llc/1085/5761229))
 - Analog plunger kit ([GermanGamingSupplies](https://germangamingsupplies.com/Analog-Plunger-Set), [Arnoz](https://shop.arnoz.com/en/19-plunger))
-- Solder
 - 2x 10kΩ resistor
 - Misc. pins and connectors (optional)
+- Solder
 
-[Here](parts.csv) is a complete DigiKey parts list (excl. plunger kit)
+There is a [Bill of Materials](BOM.csv) that can be used for ordering at e.g. DigiKey. This excludes the plunger kit.
 
 ### Tools
 
@@ -34,10 +36,10 @@ This project is meant as a Virtual Pinball setup without outputs, hence the "Lit
 
 The image below shows the layout of the PCB. The PCB is designed in Fritzing and the file can be downloaded here: [Pinscape Pico Lite.fzz](<Pinscape Pico Lite.fzz>) The PCB can be easily ordered at Aisler.net, by uploading the Fritzing file there.
 
-![PCB frontside](front.png)
+![PCB frontside](layout-front.png)
 Frontside view (solder components here)
 
-![PCB backside](back.png)
+![PCB backside](layout-back.png)
 Backside view (for reference only)
 
 ### Placing the Raspberry Pi Pico H, MMA8451 and ADS1115
