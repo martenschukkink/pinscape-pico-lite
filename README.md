@@ -49,6 +49,8 @@ Backside view (for reference only)
 1. Solder the MMA8451 at the marked location
 1. Solder the ADS1115 at the marked location
 
+![final result](final-result.jpg)
+
 ### Connecting the buttons and plunger
 Soldering pin headers to the PCB and using connectors for the button and plunger wires is optional. Alternatively, you can solder the wires for buttons and plunger directly to the board. For the small additional cost, I would advice on purchasing the pins and connectors from the parts list.
 
@@ -78,3 +80,13 @@ Released under a [BSD 3-clause license - NO WARRANTY](license.txt)
 - A big shoutout to Michael J Roberts aka MJR for creating the original Pinscape, the [Pinscape Pico](https://github.com/mjrgh/PinscapePico/), the [PinballY frontend](http://mjrnet.org/pinscape/PinballY.php) and [The New Pinscape Build Guide](http://mjrnet.org/pinscape/BuildGuideV2/BuildGuide.php).
 - Use and configuration of the MMA8451Q: [[1]](https://github.com/mjrgh/PinscapePico/blob/main/Guides/MMA8451Q-Setup.md) [[2]](http://mjrnet.org/pinscape/PinscapePico/Help/JSONConfigRef.htm#mma8451q)
 - Use and configuration of the ADS1115: [[1]](https://github.com/mjrgh/PinscapePico/tree/main/ExpansionBoards/DIY-Friendly#ads1115-adc) [[2]](http://mjrnet.org/pinscape/PinscapePico/Help/JSONConfigRef.htm#ads1115)  [[3]](https://learn.adafruit.com/adafruit-4-channel-adc-breakouts)
+
+
+## Updates
+
+### Version 1.1
+- Fixed ground fill in PCB design not actually connected to GND which caused ADS1115 to not be properly grounded
+- Increased size of texts on PCB for better readability
+
+### Version 1.0
+- First version of PCB, based on breadboard prototype
