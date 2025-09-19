@@ -1,8 +1,8 @@
 # How-to: "Lite" Virtual Pinball setup with a Pinscape Pico
 
-> Note that this is a work in progress. At this time, the first PCB's have been ordered based on a working breadboard prototype. The board should work, but this project comes with NO WARRANTIES.
+>  Note that this is a work in progress. I am currently testing v1 of the board. The updated v1.1 board contains a small fix to the layout and should work, but this project comes with NO WARRANTIES.
 
-This page documents how to build a basic board that can be used in a Virtual Pinball cabinet that supports buttons, nudging and a plunger.
+This page documents how to build a basic input controller that can be used in a Virtual Pinball cabinet that supports buttons, nudging and a plunger.
 
 The board is based on the great work of Michael J Roberts aka MJR, who developed the [Pinscape Pico](https://github.com/mjrgh/PinscapePico/) I/O controller for pinball cabinets.
 
