@@ -25,7 +25,7 @@ This project is meant as a Virtual Pinball setup without outputs, hence the "Lit
 - Misc. pins and connectors (optional)
 - Solder
 
-There is a [Bill of Materials](BOM.csv) that can be used for ordering at e.g. DigiKey. This excludes the plunger kit.
+There is a [Bill of Materials](BOM.csv) that can be used for ordering at (DigiKey part numbers are included). This excludes the plunger kit.
 
 ### Tools
 
@@ -34,7 +34,7 @@ There is a [Bill of Materials](BOM.csv) that can be used for ordering at e.g. Di
 
 ## Creating the board
 
-The image below shows the layout of the PCB. The PCB is designed in Fritzing and the file can be downloaded here: [Pinscape Pico Lite.fzz](<Pinscape Pico Lite.fzz>) The PCB can be easily ordered at Aisler.net, by uploading the Fritzing file there.
+The image below shows the layout of the PCB. The PCB is designed in [Fritzing](https://fritzing.org/) and the file can be downloaded here: [Pinscape Pico Lite.fzz](<Pinscape Pico Lite.fzz>) The PCB can be easily ordered at Aisler.net, by uploading the Fritzing file there from the software or on their website.
 
 ![PCB frontside](layout-front.png)
 Frontside view (solder components here)
@@ -73,13 +73,21 @@ Below you will find the button and breakout board connections to the Raspberry P
 ## License
 Copyright 2025, Marten Schukkink
 
-Released under a [BSD 3-clause license - NO WARRANTY](license.txt)
+Released under a [BSD 3-clause license - NO WARRANTY](LICENCE)
 
 ## Credits and links
 
 - A big shoutout to Michael J Roberts aka MJR for creating the original Pinscape, the [Pinscape Pico](https://github.com/mjrgh/PinscapePico/), the [PinballY frontend](http://mjrnet.org/pinscape/PinballY.php) and [The New Pinscape Build Guide](http://mjrnet.org/pinscape/BuildGuideV2/BuildGuide.php).
-- Use and configuration of the MMA8451Q: [[1]](https://github.com/mjrgh/PinscapePico/blob/main/Guides/MMA8451Q-Setup.md) [[2]](http://mjrnet.org/pinscape/PinscapePico/Help/JSONConfigRef.htm#mma8451q)
-- Use and configuration of the ADS1115: [[1]](https://github.com/mjrgh/PinscapePico/tree/main/ExpansionBoards/DIY-Friendly#ads1115-adc) [[2]](http://mjrnet.org/pinscape/PinscapePico/Help/JSONConfigRef.htm#ads1115)  [[3]](https://learn.adafruit.com/adafruit-4-channel-adc-breakouts)
+- Use and configuration of the MMA8451Q
+  - [adafruit.com &rarr; Adafruit MMA8451 Accelerometer Breakout](https://learn.adafruit.com/adafruit-mma8451-accelerometer-breakout)
+  - [mjr github &rarr; MMA8451Q Setup Guide](https://github.com/mjrgh/PinscapePico/blob/main/Guides/MMA8451Q-Setup.md)
+  - [mjrnet.org &rarr; JSON Configuration Reference &rarr; MMA8451Q Accelerometer](http://mjrnet.org/pinscape/PinscapePico/Help/JSONConfigRef.htm#mma8451q)
+  
+
+- Use and configuration of the ADS1115
+  - [adafruit.com &rarr; Adafruit 4-Channel ADC Breakouts](https://learn.adafruit.com/adafruit-4-channel-adc-breakouts)
+  - [mjr github &rarr; Pinscape Pico - DIY-Friendly Expansion Board &rarr; ADS1115 ADC](https://github.com/mjrgh/PinscapePico/tree/main/ExpansionBoards/DIY-Friendly#ads1115-adc)
+  - [mjrnet.org &rarr; JSON Configuration Reference > ADS1115 ADC](http://mjrnet.org/pinscape/PinscapePico/Help/JSONConfigRef.htm#ads1115)
 
 
 ## Updates
