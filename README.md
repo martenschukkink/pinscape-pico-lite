@@ -25,7 +25,7 @@ This project is meant as a Virtual Pinball setup without outputs, hence the "Lit
 - Misc. pins and connectors (optional)
 - Solder
 
-There is a [Bill of Materials](BOM.csv) that can be used for ordering at (DigiKey part numbers are included). This excludes the plunger kit.
+There is a [Bill of Materials](BOM.csv) that can be used for ordering (DigiKey part numbers are included). This excludes the plunger kit.
 
 ### Tools
 
@@ -87,7 +87,7 @@ Released under a [BSD 3-clause license - NO WARRANTY](LICENCE)
 - Use and configuration of the ADS1115
   - [adafruit.com &rarr; Adafruit 4-Channel ADC Breakouts](https://learn.adafruit.com/adafruit-4-channel-adc-breakouts)
   - [mjr github &rarr; Pinscape Pico - DIY-Friendly Expansion Board &rarr; ADS1115 ADC](https://github.com/mjrgh/PinscapePico/tree/main/ExpansionBoards/DIY-Friendly#ads1115-adc)
-  - [mjrnet.org &rarr; JSON Configuration Reference > ADS1115 ADC](http://mjrnet.org/pinscape/PinscapePico/Help/JSONConfigRef.htm#ads1115)
+  - [mjrnet.org &rarr; JSON Configuration Reference &rarr; ADS1115 ADC](http://mjrnet.org/pinscape/PinscapePico/Help/JSONConfigRef.htm#ads1115)
 
 
 ## Updates
